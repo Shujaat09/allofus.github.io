@@ -16,6 +16,38 @@ margin-left: auto;
  width: 640px;
  height: 480px;
 }
+  section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+}
+
+.example-button-row .mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
 </style>
 <iframe src="https://drive.google.com/file/d/1I30w15W8FIHm301Tkhf_vObU1-QDKmaF/preview" allow="autoplay" allowfullscreen></iframe>
  <div class="example-button-row">
@@ -26,5 +58,18 @@ margin-left: auto;
   <button mat-flat-button disabled>Disabled</button>
   <a mat-flat-button routerLink=".">Link</a>
 </div>
+ <script type = "text/typescript">
+    import {Component} from '@angular/core';
+
+/**
+ * @title Basic buttons
+ */
+@Component({
+  selector: 'button-overview-example',
+  templateUrl: 'button-overview-example.html',
+  styleUrls: ['button-overview-example.css'],
+})
+export class ButtonOverviewExample {}
+</script>
 </body>
 </html>
